@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .items {
+            margin:0px 25px;
+            padding: 45px;
+            border-radius: 50%;
+        }
+
+        .items:hover{
+            cursor: pointer;
+            background-color: white;
+            padding: 40px;
+        }
+        .rock {
+            background-color: coral;
+        }
+        .rock:hover{
+            border: 5px solid coral;
+        }
+        .paper {
+            background-color:cornflowerblue;
+        }
+        .paper:hover{
+            border: 5px solid cornflowerblue;
+        }
+        .scissors {
+            background-color:darkseagreen;
+        }
+        .scissors:hover{
+            border: 5px solid darkseagreen;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        h2{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <div style="margin: 80px 0px  80px 80px;">
+            <div style="margin-bottom: 10px;">
+                <h2>Pilihan Kamu : </h2>
+                <h2 id="player1"> </h2></div>
+            <div>            
+                <h2>Pilihan Komputer : </h2>
+                <h2 id="player2" > </h2></div>
+        </div>
+        <div class="parent">
+            <div class="scissors items"><img src="scissors-fix.png" alt=""></div>
+            <div class="rock items"><img  src="rock-fix.png" alt=""></div>
+            <div class="paper items"><img src="paper-fix.png" alt=""></div>
+        </div>
+        <div style=" display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 100px;">
+            <h1 id="result"></h1> 
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
