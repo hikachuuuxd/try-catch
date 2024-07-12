@@ -1,2 +1,2 @@
 # try-catch
-my code training project
+Lahitan latihan program sederhana
